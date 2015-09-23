@@ -8,7 +8,7 @@ export function setEntries(state, entries) {
 
 export function vote(state, entry) {
   return state.updateIn(
-    ['vote', 'tally', entry],
+    ['tally', entry],
     0,
     tally => tally + 1
   );
